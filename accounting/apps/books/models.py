@@ -23,6 +23,9 @@ from .managers import (
 
 TWO_PLACES = D(10) ** -2
 
+from accounting.apps.people.models import Employee,Client
+
+
 
 class Organization(models.Model):
     display_name = models.CharField(max_length=150,
@@ -308,11 +311,10 @@ class Estimate(AbstractSale):
                                      related_name="estimates",
                                      verbose_name="From Organization",
                                      on_delete=models.CASCADE)
-    client = models.CharField(max_length=1000)
 
-    # client = models.ForeignKey('people.Client',
-    #                            verbose_name="To Client",
-    #                            on_delete=models.CASCADE)
+    client = models.ForeignKey(Client,
+                               verbose_name="To Client",
+                               on_delete=models.CASCADE)
 
     objects = EstimateQuerySet.as_manager()
 
@@ -334,13 +336,12 @@ class Estimate(AbstractSale):
 
 
 class EstimateLine(AbstractSaleLine):
-    invoice = models.ForeignKey('books.Estimate',
+    invoice = models.ForeignKey(Estimate,
                                 related_name="lines",
                                 on_delete=models.CASCADE)
-    tax_rate = models.CharField(max_length=100)
 
-    # tax_rate = models.ForeignKey('books.TaxRate',
-    #                              on_delete=models.CASCADE)
+    tax_rate = models.ForeignKey(TaxRate,
+                                 on_delete=models.CASCADE)
 
     class Meta:
         pass
@@ -351,9 +352,13 @@ class Invoice(AbstractSale):
                                      related_name="invoices",
                                      verbose_name="From Organization",
                                      on_delete=models.CASCADE)
-    client = models.ForeignKey('people.Client',
+
+    client = models.ForeignKey(Client,
                                verbose_name="To Client",
                                on_delete=models.CASCADE)
+
+
+
     payments = GenericRelation('books.Payment')
 
     objects = InvoiceQuerySet.as_manager()
@@ -376,11 +381,13 @@ class Invoice(AbstractSale):
 
 
 class InvoiceLine(AbstractSaleLine):
-    invoice = models.ForeignKey('books.Invoice',
+    invoice = models.ForeignKey(Invoice,
                                 related_name="lines",
                                 on_delete=models.CASCADE)
-    tax_rate = models.ForeignKey('books.TaxRate',
+
+    tax_rate = models.ForeignKey(TaxRate,
                                  on_delete=models.CASCADE)
+
 
     class Meta:
         pass
@@ -391,9 +398,12 @@ class Bill(AbstractSale):
                                      related_name="bills",
                                      verbose_name="To Organization",
                                      on_delete=models.CASCADE)
-    client = models.ForeignKey('people.Client',
+
+    client = models.ForeignKey(Client,
                                verbose_name="From Client",
                                on_delete=models.CASCADE)
+
+
     payments = GenericRelation('books.Payment')
 
     objects = BillQuerySet.as_manager()
@@ -416,11 +426,14 @@ class Bill(AbstractSale):
 
 
 class BillLine(AbstractSaleLine):
-    bill = models.ForeignKey('books.Bill',
+    bill = models.ForeignKey(Bill,
                              related_name="lines",
                              on_delete=models.CASCADE)
-    tax_rate = models.ForeignKey('books.TaxRate',
+
+    tax_rate = models.ForeignKey(TaxRate,
                                  on_delete=models.CASCADE)
+
+
 
     class Meta:
         pass
@@ -431,7 +444,7 @@ class ExpenseClaim(AbstractSale):
                                      related_name="expense_claims",
                                      verbose_name="From Organization",
                                      on_delete=models.CASCADE)
-    employee = models.ForeignKey('people.Employee',
+    employee = models.ForeignKey(Employee,
                                  verbose_name="Paid by employee",
                                  on_delete=models.CASCADE)
     payments = GenericRelation('books.Payment')
@@ -456,10 +469,10 @@ class ExpenseClaim(AbstractSale):
 
 
 class ExpenseClaimLine(AbstractSaleLine):
-    expense_claim = models.ForeignKey('books.ExpenseClaim',
+    expense_claim = models.ForeignKey(ExpenseClaim,
                                       related_name="lines",
                                       on_delete=models.CASCADE)
-    tax_rate = models.ForeignKey('books.TaxRate',
+    tax_rate = models.ForeignKey(TaxRate,
                                  on_delete=models.CASCADE)
 
     class Meta:

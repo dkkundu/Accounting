@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b81fbaf-d6ae-4c43-8e9c-895b0526df8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Accounting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Accounting.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPL_Accounting/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPL_Accounting/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPL_Accounting/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPL_Accounting/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0002_auto_20141029_1606.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0003_auto_20141029_1606.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0004_auto_20141104_1026.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0005_auto_20150128_1458.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0006_auto_20150206_1836.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0007_auto_20150206_1836.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0008_auto_20150206_1843.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0009_auto_20150206_1850.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0010_auto_20150210_1449.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0011_auto_20150324_1430.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/mixins.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounting/apps/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/connect/steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/connect/steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/connect/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/connect/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/connect/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/connect/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/people/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/people/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/people/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/people/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/people/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/people/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/reports/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/reports/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/apps/reports/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/reports/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/libs/checks.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/libs/checks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/libs/templatetags/form_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/libs/templatetags/form_filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounting/libs/templatetags/introspection_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/libs/templatetags/introspection_filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounting/apps/books/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="169" column="22" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
+            <state relative-caret-position="394">
+              <caret line="310" column="23" selection-start-line="310" selection-start-column="23" selection-end-line="310" selection-end-column="23" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -59,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accounting/apps/books/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="339" column="46" selection-start-line="339" selection-start-column="46" selection-end-line="339" selection-end-column="46" />
+            <state relative-caret-position="474">
+              <caret line="506" lean-forward="true" selection-start-line="506" selection-end-line="506" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -88,7 +57,11 @@
       <find>ClientForOrganizationChoices</find>
       <find>books.Organization</find>
       <find>books</find>
+      <find>text</find>
       <find>EstimateForm</find>
+      <find>TaxRate</find>
+      <find>ExpenseClaim</find>
+      <find>Estimate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,8 +105,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="182" />
-    <option name="y" value="55" />
+    <option name="x" value="173" />
+    <option name="y" value="90" />
     <option name="width" value="1366" />
     <option name="height" value="731" />
   </component>
@@ -166,14 +139,6 @@
               <item name="accounting" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="books" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Accounting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Accounting" type="462c0819:PsiDirectoryNode" />
-              <item name="accounting" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -213,7 +178,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="182" y="55" width="1366" height="731" extended-state="0" />
+    <frame x="173" y="90" width="1366" height="731" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18651685" />
@@ -340,9 +305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounting/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounting_project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -411,10 +373,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/accounting/apps/books/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="169" column="22" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
+        <state relative-caret-position="394">
+          <caret line="310" column="23" selection-start-line="310" selection-start-column="23" selection-end-line="310" selection-end-column="23" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
@@ -423,8 +388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accounting/apps/books/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="339" column="46" selection-start-line="339" selection-start-column="46" selection-end-line="339" selection-end-column="46" />
+        <state relative-caret-position="474">
+          <caret line="506" lean-forward="true" selection-start-line="506" selection-end-line="506" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
