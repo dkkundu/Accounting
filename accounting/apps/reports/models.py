@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from accounting.apps.books.models_organization import Organization
 
 
 class BusinessSettings(models.Model):
@@ -16,7 +17,7 @@ class BusinessSettings(models.Model):
 
     # optionnaly linked to an organization
     # for automated behaviors during cross-organizations invoicing
-    organization = models.OneToOneField('books.Organization',
+    organization = models.OneToOneField(Organization,
                                         related_name="business_settings",
                                         blank=True, null=True,
                                         on_delete=models.PROTECT)
@@ -60,7 +61,7 @@ class FinancialSettings(models.Model):
 
     # optionnaly linked to an organization
     # for automated behaviors during cross-organizations invoicing
-    organization = models.OneToOneField('books.Organization',
+    organization = models.OneToOneField(Organization,
                                         related_name="financial_settings",
                                         blank=True, null=True,
                                         on_delete=models.PROTECT)
@@ -84,7 +85,7 @@ class PayRunSettings(models.Model):
 
     # optionnaly linked to an organization
     # for automated behaviors during cross-organizations invoicing
-    organization = models.OneToOneField('books.Organization',
+    organization = models.OneToOneField(Organization,
                                         related_name="payrun_settings",
                                         blank=True, null=True,
                                         on_delete=models.PROTECT)

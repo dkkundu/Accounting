@@ -31,12 +31,15 @@ SECRET_KEY = '4v6sec*0pn5%meaao$zm5i(cxhpu9u44z8!eiey=(y!16573^x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.0.111',
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounting',
+    'accounting.apps.books',
+    'accounting.apps.connect',
+    'accounting.apps.reports',
 ]
 
 TEMPLATE_CONTEXT_PROCESSORS = (

@@ -24,71 +24,7 @@ from .managers import (
 TWO_PLACES = D(10) ** -2
 
 from accounting.apps.people.models import Employee,Client
-
-
-
-class Organization(models.Model):
-    display_name = models.CharField(max_length=150,
-        help_text="Name that you communicate")
-    legal_name = models.CharField(max_length=150,
-        help_text="Official name to appear on your reports, sales "
-                  "invoices and bills")
-
-    owner = models.ForeignKey(settings.AUTH_USER_MODEL,
-                              related_name="owned_organizations",
-                              on_delete=models.CASCADE)
-    members = models.ManyToManyField(settings.AUTH_USER_MODEL,
-                                     related_name="organizations",
-                                     blank=True, null=True)
-
-    class Meta:
-        pass
-
-    def __str__(self):
-        return self.legal_name
-
-    def get_absolute_url(self):
-        return reverse('books:organization-detail', args=[self.pk])
-
-    @property
-    def turnover_excl_tax(self):
-        return self.invoices.turnover_excl_tax() or D('0.00')
-
-    @property
-    def turnover_incl_tax(self):
-        return self.invoices.turnover_incl_tax() or D('0.00')
-
-    @property
-    def debts_excl_tax(self):
-        return self.bills.debts_excl_tax() or D('0.00')
-
-    @property
-    def debts_incl_tax(self):
-        return self.bills.debts_incl_tax() or D('0.00')
-
-    @property
-    def profits(self):
-        return self.turnover_excl_tax - self.debts_excl_tax
-
-    @property
-    def collected_tax(self):
-        return self.turnover_incl_tax - self.turnover_excl_tax
-
-    @property
-    def deductible_tax(self):
-        return self.debts_incl_tax - self.debts_excl_tax
-
-    @property
-    def tax_provisionning(self):
-        return self.collected_tax - self.deductible_tax
-
-    @property
-    def overdue_total(self):
-        due_invoices = self.invoices.dued()
-        due_turnonver = due_invoices.turnover_incl_tax()
-        total_paid = due_invoices.total_paid()
-        return due_turnonver - total_paid
-
+from .models_organization import Organization
 
 class TaxRate(models.Model):
     """
@@ -102,7 +38,7 @@ class TaxRate(models.Model):
 
     *inspired by Xero*
     """
-    organization = models.ForeignKey('books.Organization',
+    organization = models.ForeignKey(Organization,
                                      related_name="tax_rates",
                                      verbose_name="Attached to Organization",
                                      on_delete=models.CASCADE)
@@ -264,6 +200,34 @@ class AbstractSale(CheckingModelMixin, models.Model):
         return check
 
 
+class Payment(models.Model):
+    amount = models.DecimalField("Amount",
+                                 decimal_places=2,
+                                 max_digits=12)
+    detail = models.CharField(max_length=255,
+                              blank=True,
+                              null=True)
+    date_paid = models.DateField(default=date.today)
+    reference = models.CharField(max_length=255,
+                                 blank=True,
+                                 null=True)
+
+    # relationship to an object
+    content_type = models.ForeignKey(ContentType,
+                                     on_delete=models.CASCADE)
+    object_id = models.PositiveIntegerField()
+    content_object = GenericForeignKey('content_type', 'object_id')
+
+    class Meta:
+        ordering = ('-date_paid',)
+
+    def __str__(self):
+        if self.detail:
+            return self.detail
+        return "Payment of {}".format(currency_formatter(self.amount))
+
+
+
 class AbstractSaleLine(models.Model):
     label = models.CharField(max_length=255)
     description = models.TextField(blank=True, null=True)
@@ -307,7 +271,7 @@ class AbstractSaleLine(models.Model):
 
 
 class Estimate(AbstractSale):
-    organization = models.ForeignKey('books.Organization',
+    organization = models.ForeignKey(Organization,
                                      related_name="estimates",
                                      verbose_name="From Organization",
                                      on_delete=models.CASCADE)
@@ -348,7 +312,7 @@ class EstimateLine(AbstractSaleLine):
 
 
 class Invoice(AbstractSale):
-    organization = models.ForeignKey('books.Organization',
+    organization = models.ForeignKey(Organization,
                                      related_name="invoices",
                                      verbose_name="From Organization",
                                      on_delete=models.CASCADE)
@@ -357,9 +321,7 @@ class Invoice(AbstractSale):
                                verbose_name="To Client",
                                on_delete=models.CASCADE)
 
-
-
-    payments = GenericRelation('books.Payment')
+    payments = GenericRelation(Payment)
 
     objects = InvoiceQuerySet.as_manager()
 
@@ -394,7 +356,7 @@ class InvoiceLine(AbstractSaleLine):
 
 
 class Bill(AbstractSale):
-    organization = models.ForeignKey('books.Organization',
+    organization = models.ForeignKey(Organization,
                                      related_name="bills",
                                      verbose_name="To Organization",
                                      on_delete=models.CASCADE)
@@ -403,8 +365,7 @@ class Bill(AbstractSale):
                                verbose_name="From Client",
                                on_delete=models.CASCADE)
 
-
-    payments = GenericRelation('books.Payment')
+    payments = GenericRelation(Payment)
 
     objects = BillQuerySet.as_manager()
 
@@ -440,14 +401,14 @@ class BillLine(AbstractSaleLine):
 
 
 class ExpenseClaim(AbstractSale):
-    organization = models.ForeignKey('books.Organization',
+    organization = models.ForeignKey(Organization,
                                      related_name="expense_claims",
                                      verbose_name="From Organization",
                                      on_delete=models.CASCADE)
     employee = models.ForeignKey(Employee,
                                  verbose_name="Paid by employee",
                                  on_delete=models.CASCADE)
-    payments = GenericRelation('books.Payment')
+    payments = GenericRelation(Payment)
 
     objects = ExpenseClaimQuerySet.as_manager()
 
@@ -479,28 +440,3 @@ class ExpenseClaimLine(AbstractSaleLine):
         pass
 
 
-class Payment(models.Model):
-    amount = models.DecimalField("Amount",
-                                 decimal_places=2,
-                                 max_digits=12)
-    detail = models.CharField(max_length=255,
-                              blank=True,
-                              null=True)
-    date_paid = models.DateField(default=date.today)
-    reference = models.CharField(max_length=255,
-                                 blank=True,
-                                 null=True)
-
-    # relationship to an object
-    content_type = models.ForeignKey(ContentType,
-                                     on_delete=models.CASCADE)
-    object_id = models.PositiveIntegerField()
-    content_object = GenericForeignKey('content_type', 'object_id')
-
-    class Meta:
-        ordering = ('-date_paid',)
-
-    def __str__(self):
-        if self.detail:
-            return self.detail
-        return "Payment of {}".format(currency_formatter(self.amount))

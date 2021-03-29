@@ -2,6 +2,8 @@ from decimal import Decimal as D
 
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from accounting.apps.books.models_organization import Organization
+
 
 
 class Client(models.Model):
@@ -15,7 +17,7 @@ class Client(models.Model):
     postal_code = models.CharField(max_length=7)
     country = models.CharField(max_length=50)
 
-    organization = models.ForeignKey('books.Organization',
+    organization = models.ForeignKey(Organization,
                                      related_name="clients",
                                      on_delete=models.CASCADE,)
 
@@ -62,7 +64,7 @@ class Employee(models.Model):
         ]
     )
 
-    organization = models.ForeignKey('books.Organization',
+    organization = models.ForeignKey(Organization,
                                      related_name="employees",
                                      on_delete=models.CASCADE)
 

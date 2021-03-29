@@ -9,8 +9,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include('accounting.apps.connect.urls',
     #     namespace="connect")),
-    path('books/', include('accounting.apps.books.urls',
-        namespace="books")),
+    path('books/', include(('accounting.apps.books.urls',
+                           'books'),namespace="books")),
     # path('people/', include('accounting.apps.people.urls',
     #     namespace="people")),
     #
