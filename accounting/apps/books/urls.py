@@ -1,9 +1,9 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from . import views
 
 
-urlpatterns = patterns('',
+urlpatterns = [
     url(r'^$',
         views.DashboardView.as_view(),
         name="dashboard"),
@@ -117,4 +117,4 @@ urlpatterns = patterns('',
     url(r'^payment/(?P<pk>\d+)/delete/$',
         views.PaymentDeleteView.as_view(),
         name="payment-delete"),
-)
+]

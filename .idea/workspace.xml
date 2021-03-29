@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b81fbaf-d6ae-4c43-8e9c-895b0526df8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Accounting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Accounting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPL_Accounting/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPL_Accounting/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPL_Accounting/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPL_Accounting/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0002_auto_20141029_1606.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0003_auto_20141029_1606.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0004_auto_20141104_1026.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0005_auto_20150128_1458.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0006_auto_20150206_1836.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0007_auto_20150206_1836.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0008_auto_20150206_1843.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0009_auto_20150206_1850.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0010_auto_20150210_1449.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/migrations/0011_auto_20150324_1430.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/books/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/connect/steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/connect/steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/connect/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/connect/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/connect/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/connect/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/people/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/people/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/people/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/people/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/people/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/people/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/reports/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/reports/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/apps/reports/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/apps/reports/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/libs/checks.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/libs/checks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/libs/templatetags/form_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/libs/templatetags/form_filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounting/libs/templatetags/introspection_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounting/libs/templatetags/introspection_filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,25 +43,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/accounting/apps/books/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="169" column="22" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="198">
-                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/accounting/apps/books/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="339" column="46" selection-start-line="339" selection-start-column="46" selection-end-line="339" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounting/apps/books/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TEMPLATE_CONTEXT_PROCESSORS</find>
+      <find>AutoModelSelect2Field</find>
+      <find>UserMultipleChoices</find>
+      <find>members</find>
+      <find>ClientForOrganizationChoices</find>
+      <find>books.Organization</find>
+      <find>books</find>
+      <find>EstimateForm</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +98,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/accounting/apps/people/models.py" />
+        <option value="$PROJECT_DIR$/accounting/libs/checks.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/reports/models.py" />
+        <option value="$PROJECT_DIR$/accounting/libs/templatetags/form_filters.py" />
+        <option value="$PROJECT_DIR$/accounting/libs/templatetags/introspection_filters.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/reports/urls.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/people/urls.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/connect/urls.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/books/urls.py" />
+        <option value="$PROJECT_DIR$/TPL_Accounting/urls.py" />
+        <option value="$PROJECT_DIR$/accounting_project/settings.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/connect/views.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/connect/steps.py" />
+        <option value="$PROJECT_DIR$/accounting_project/urls.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/books/views.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/books/mixins.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/people/forms.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/books/forms.py" />
+        <option value="$PROJECT_DIR$/accounting/apps/books/models.py" />
       </list>
     </option>
   </component>
@@ -49,13 +127,14 @@
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="358" />
-    <option name="y" value="89" />
-    <option name="width" value="866" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="182" />
+    <option name="y" value="55" />
+    <option name="width" value="1366" />
     <option name="height" value="731" />
   </component>
   <component name="ProjectView">
@@ -63,7 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,14 +149,43 @@
               <item name="Accounting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Accounting" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Accounting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Accounting" type="462c0819:PsiDirectoryNode" />
+              <item name="accounting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Accounting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Accounting" type="462c0819:PsiDirectoryNode" />
+              <item name="accounting" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Accounting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Accounting" type="462c0819:PsiDirectoryNode" />
+              <item name="accounting" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Accounting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Accounting" type="462c0819:PsiDirectoryNode" />
+              <item name="accounting" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -106,16 +213,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="736" extended-state="6" />
+    <frame x="182" y="55" width="1366" height="731" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15487714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18651685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -123,15 +226,32 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/accounting/apps/people/models.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/accounting_project/urls.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -139,6 +259,175 @@
             <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/libs/checks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/reports/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="89" column="64" selection-start-line="89" selection-start-column="64" selection-end-line="89" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/libs/templatetags/form_filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/libs/templatetags/introspection_filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/people/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/books/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TPL_Accounting/urls.py" />
+    <entry file="file://$PROJECT_DIR$/accounting/apps/reports/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/connect/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting_project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding>
+            <element signature="e#318#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/connect/steps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/connect/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/books/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/people/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/people/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="53" selection-start-line="53" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting_project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="55" selection-start-line="13" selection-start-column="6" selection-end-line="19" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/books/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/books/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="169" column="22" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounting/apps/books/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="339" column="46" selection-start-line="339" selection-start-column="46" selection-end-line="339" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

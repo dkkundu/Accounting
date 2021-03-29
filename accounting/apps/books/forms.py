@@ -1,5 +1,6 @@
 from django.forms import ModelForm, BaseInlineFormSet
 from django.forms.models import inlineformset_factory
+from django import forms
 
 from .models import (
     Organization,
@@ -15,9 +16,11 @@ from .models import (
     Payment)
 from .utils import organization_manager
 from accounting.apps.people.models import Client, Employee
-from accounting.apps.people.forms import UserMultipleChoices
+#from accounting.apps.people.forms import UserMultipleChoices
+UserMultipleChoices = None
 
-from django_select2.fields import AutoModelSelect2Field
+#from django_select2.fields import AutoModelSelect2Field
+AutoModelSelect2Field  = None
 from datetimewidget.widgets import DateWidget
 
 
@@ -43,11 +46,22 @@ class SaleInlineLineFormSet(RequiredFirstInlineFormSet):
             f.restrict_to_organization(orga)
 
 
-class ClientForOrganizationChoices(AutoModelSelect2Field):
+# class ClientForOrganizationChoices(AutoModelSelect2Field):
+#     queryset = Client.objects.all()
+#     search_fields = (
+#         'name__icontains',
+#     )
+
+
+class ClientForOrganizationChoices():
+    members = forms.CharField(max_length=200)
+
     queryset = Client.objects.all()
     search_fields = (
         'name__icontains',
+        'members',
     )
+
 
     def prepare_qs_params(self, request, search_term, search_fields):
         """restrict to the current selected organization"""
@@ -56,8 +70,16 @@ class ClientForOrganizationChoices(AutoModelSelect2Field):
         params['and']['organization'] = orga
         return params
 
+#
+# class EmployeeForOrganizationChoices(AutoModelSelect2Field):
+#     queryset = Employee.objects.all()
+#     search_fields = (
+#         'first_name__icontains',
+#         'last_name__icontains',
+#         'email__icontains',
+#     )
 
-class EmployeeForOrganizationChoices(AutoModelSelect2Field):
+class EmployeeForOrganizationChoices():
     queryset = Employee.objects.all()
     search_fields = (
         'first_name__icontains',
@@ -74,7 +96,8 @@ class EmployeeForOrganizationChoices(AutoModelSelect2Field):
 
 
 class OrganizationForm(ModelForm):
-    members = UserMultipleChoices(required=False)
+    # members = UserMultipleChoices(required=False)
+    members = forms.CharField(max_length=200)
 
     class Meta:
         model = Organization
@@ -116,7 +139,8 @@ class RestrictLineFormToOrganizationMixin(object):
 
 
 class EstimateForm(ModelForm):
-    client = ClientForOrganizationChoices()
+    # client = ClientForOrganizationChoices()
+    client = forms.CharField(max_length=200)
 
     class Meta:
         model = Estimate

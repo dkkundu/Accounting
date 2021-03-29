@@ -1,5 +1,6 @@
 from django.core.validators import EMPTY_VALUES
-from django.utils.datastructures import SortedDict
+from django.utils import datastructures as SortedDict
+
 
 
 class PrimaryKeyRelatedField(object):

@@ -1,16 +1,16 @@
 """
-WSGI config for TPL_Accounting project.
+WSGI config for accounting_project project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
+https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 """
 
 import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "TPL_Accounting.settings")
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'accounting_project.settings')
 
 application = get_wsgi_application()

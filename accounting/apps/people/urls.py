@@ -1,9 +1,9 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from . import views
 
 
-urlpatterns = patterns('',
+urlpatterns =[
 
     # Clients
     url(r'^client/$',
@@ -32,4 +32,4 @@ urlpatterns = patterns('',
     url(r'^employee/(?P<pk>\d+)/detail/$',
         views.EmployeeDetailView.as_view(),
         name="employee-detail"),
-)
+]

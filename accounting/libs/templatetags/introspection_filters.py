@@ -2,9 +2,9 @@ from django import template
 from django.forms import ModelForm, BaseFormSet
 from django.db.models import Model
 
-from django_select2.fields import (
-    AutoModelSelect2Field,
-    AutoModelSelect2MultipleField)
+# from django_select2.forms import (
+#     AutoModelSelect2Field,
+#     AutoModelSelect2MultipleField)
 
 
 register = template.Library()
@@ -28,6 +28,8 @@ def get_form_model_verbose_name(instance):
 
 @register.filter
 def is_select2_field(form, field):
-    select2_classes = (AutoModelSelect2Field, AutoModelSelect2MultipleField)
-    res = any(isinstance(field.field, cls) for cls in select2_classes)
-    return res
+
+    # select2_classes = (AutoModelSelect2Field, AutoModelSelect2MultipleField)
+    # res = any(isinstance(field.field, cls) for cls in select2_classes)
+    if 2 > 1:
+        return True
