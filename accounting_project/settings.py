@@ -32,13 +32,14 @@ SECRET_KEY = '4v6sec*0pn5%meaao$zm5i(cxhpu9u44z8!eiey=(y!16573^x'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     '192.168.0.111',
 ]
 
 
 # Application definition
 
-INSTALLED_APPS = [
+DJANGO_APPS = [
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -50,7 +51,13 @@ INSTALLED_APPS = [
     'accounting.apps.books',
     'accounting.apps.connect',
     'accounting.apps.reports',
+    'accounting.apps.people',
 ]
+
+PROJECT_APPS = []
+
+INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
+
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',

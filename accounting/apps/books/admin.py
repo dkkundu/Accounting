@@ -1,13 +1,14 @@
 from django.contrib import admin
 from django.contrib.contenttypes.admin import GenericTabularInline
+from accounting.apps.people.models import Client, Employee
 
 from . import models
+
 
 
 @admin.register(models.Organization)
 class OrganizationAdmin(admin.ModelAdmin):
     pass
-
 
 @admin.register(models.TaxRate)
 class TaxRateAdmin(admin.ModelAdmin):

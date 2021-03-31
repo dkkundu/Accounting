@@ -5,7 +5,6 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from accounting.apps.books.models_organization import Organization
 
 
-
 class Client(models.Model):
     name = models.CharField(max_length=150)
 
@@ -19,7 +18,7 @@ class Client(models.Model):
 
     organization = models.ForeignKey(Organization,
                                      related_name="clients",
-                                     on_delete=models.CASCADE,)
+                                     on_delete=models.PROTECT,)
 
     class Meta:
         pass
@@ -66,7 +65,7 @@ class Employee(models.Model):
 
     organization = models.ForeignKey(Organization,
                                      related_name="employees",
-                                     on_delete=models.CASCADE)
+                                     on_delete=models.PROTECT)
 
     class Meta:
         pass
